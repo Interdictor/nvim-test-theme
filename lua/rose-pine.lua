@@ -189,12 +189,10 @@ local function set_highlights()
 		Conditional = { fg = palette.pine },
 		Constant = { fg = palette.gold },
 		Debug = { fg = palette.rose },
-		Define = { fg = palette.iris },
-		Delimiter = { fg = palette.subtle },
+		-- Delimiter = { fg = palette.subtle },
 		Error = { fg = palette.love },
 		Exception = { fg = palette.pine },
 		Float = { fg = palette.gold },
-		Function = { fg = palette.rose },
 		Identifier = { fg = palette.text },
 		Include = { fg = palette.pine },
 		Keyword = { fg = palette.pine },
@@ -211,13 +209,9 @@ local function set_highlights()
 		PreCondit = { fg = palette.iris },
 		PreProc = { link = "PreCondit" },
 		Repeat = { fg = palette.pine },
-		Special = { fg = palette.foam },
-		SpecialChar = { link = "Special" },
 		SpecialComment = { fg = palette.iris },
-		Statement = { fg = palette.pine, bold = styles.bold },
 		StorageClass = { fg = palette.foam },
 		String = { fg = palette.gold },
-		Structure = { fg = palette.foam },
 		Tag = { fg = palette.foam },
 		Todo = { fg = palette.rose, bg = palette.rose, blend = 20 },
 		Type = { fg = palette.foam },
@@ -1007,6 +1001,66 @@ local function set_highlights()
 		BlinkCmpKindCopilot = { fg = palette.foam },
 		BlinkCmpKindSupermaven = { fg = palette.foam },
 		BlinkCmpKindTabNine = { fg = palette.foam },
+
+		-- general
+		Structure = { fg = palette.keyword_1 },
+		Statement = { fg = palette.operator },
+		Function = { fg = palette.keyword_1 },
+		Define = { fg = palette.keyword_1 },
+		Special = { fg = palette.keyword_1 },
+		SpecialChar = { link = "Special" },
+
+		-- typescript
+		TypescriptVariable = { fg = palette.cherenkov },
+		TypescriptImport = { fg = palette.keyword_1 },
+		TypescriptImportType = { fg = palette.keyword_1 },
+		TypescriptBraces = { fg = palette.keyword_1 },
+		TypescriptGlobal = { fg = palette.global },
+		TypescriptExport = { fg = palette.keyword_1 },
+		TypescriptVariable = { fg = palette.keyword_1 },
+		TypescriptTypeReference = { fg = palette.support_2 },
+		TypescriptPredefinedType = { fg = palette.support_1 },
+		TypescriptMemberOptionality = { fg = palette.operator },
+		TypescriptTemplateSB = { fg = palette.keyword_1 },
+		TypescriptTry = { fg = palette.keyword_1 },
+		TypescriptExceptions = { fg = palette.keyword_1 },
+		TypescriptAsyncFuncKeyword = { fg = palette.operator },
+		TypescriptKeywordOp = { fg = palette.operator },
+		TypescriptOperator = { fg = palette.operator },
+		TypescriptFuncCallArg = { fg = palette.cherenkov },
+		TypescriptResponseProp = { fg = palette.text_2 },
+		TypescriptDOMDocProp = { fg = palette.text_2 },
+		TypescriptClassName = { fg = palette.classname },
+		TypescriptMember = { fg = palette.classname },
+		TypescriptInterfaceName = { fg = palette.interfacename },
+		TypescriptBinaryOp = { fg = palette.operator },
+
+		-- javascript
+		JavascriptReserved = { fg = palette.keyword },
+		Javascript = { fg = palette.text },
+		JavascriptOperator = { fg = palette.operator },
+		JavascriptNull = { fg = palette.cherenkov },
+
+		-- html
+		HtmlTag = { fg = palette.keyword },
+
+		-- ruby
+		RubyConstant = { fg = palette.constant },
+		RubyMethodName = { fg = palette.classname },
+		RubyClassName = { fg = palette.classname },
+		RubyStringDelimiter = { fg = palette.string },
+		RubyString = { fg = palette.string },
+		RubySymbol = { fg = palette.symbol },
+
+		-- make
+		MakeTarget = { fg = palette.classname },
+		MakeCommands = { fg = palette.text },
+		MakeIdent = { fg = palette.parameter },
+
+		--json
+		JsonKeyword = { fg = palette.text },
+		JsonBraces = { fg = palette.keyword_1 },
+		JsonFold = { fg = palette.keyword_1 },
 	}
 	local transparency_highlights = {
 		DiagnosticVirtualTextError = { fg = groups.error },

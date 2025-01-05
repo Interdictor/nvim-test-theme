@@ -1,6 +1,27 @@
 local options = require("rose-pine.config").options
 local variants = {
 	main = {
+
+		text = "#e0def4",
+		text_2 = "#a3a74b",
+		keyword_1 = "#857b5e",
+		cherenkov = "#69b6c7",
+		classname = "#59cc9a",
+		interfacename = "#a2cc59",
+		string = "#97c7d9",
+		numeric = "#70a2c9",
+		parameter = "#eeb437",
+		global = "#f6c177",
+		support_1 = "#b8a054",
+		support_2 = "#c8a947",
+		error = "#d23f22",
+		operator = "#c88558",
+		constant = "#c5af35",
+		symbol = "#69b6c7",
+		highlight_low = "#ff0000",
+		highlight_med = "#5e512f", -- highlighted current line (visual mode)
+		highlight_high = "#ffffff",
+
 		_nc = "#ff0000",
 		base = "#1c1a16", -- background
 		surface = "#211f1d", -- statusline
@@ -22,9 +43,7 @@ local variants = {
 		-- leaf = "#95b1ac",
 		leaf = "#ff00ff", -- ni idea
 		-- highlight_low = "#21202e",
-		highlight_low = "#ff0000",
-		highlight_med = "#ffff00", -- highlighted current line (visual mode)
-		highlight_high = "#ffffff",
+
 		none = "NONE",
 	},
 	moon = {
@@ -34,7 +53,6 @@ local variants = {
 		overlay = "#393552",
 		muted = "#6e6a86",
 		subtle = "#908caa",
-		text = "#e0def4",
 		love = "#eb6f92",
 		gold = "#f6c177",
 		rose = "#ea9a97",
